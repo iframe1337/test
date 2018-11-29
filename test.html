@@ -2,12 +2,11 @@
 <script>
 function put() {
 	var x = new XMLHttpRequest();
-	x.open("POST","https://iframe.assembla.com/api/realtime_auth",true);
+	x.open("POST","https://app.assembla.com/api/realtime_auth",true);
 	x.setRequestHeader("Content-Type", "application/json; charset=UTF-8"); 
 	x.send(JSON.stringify({
 	"client": "6506daa5-cb3a-4c08-bca1-7a005eb8ca2c",
-	"channels": ["$useraWUztw85ur6i8-bK8JiBFu"]
-}); 
+	"channels": ["$useraWUztw85ur6i8-bK8JiBFu"]}); 
 }
 </script>
 <body onload="put()">
